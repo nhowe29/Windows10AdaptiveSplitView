@@ -3,7 +3,7 @@ Example Project Using Adaptive Layouts and Splitview for Windows 10
 
 # Overview
 
-The project contains two main components, the SplitView and it's inner content. Within the SplitView you will notices a few things:
+The project contains two main components, the SplitView and its inner content. Within the SplitView you will notices a few things:
 
 1. Adaptive Triggers.
 
