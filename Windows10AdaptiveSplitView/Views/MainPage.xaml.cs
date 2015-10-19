@@ -38,7 +38,12 @@ namespace AdaptiveExampleConcept
 
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
+            // TODO
+        }
 
+        private void SplitViewBtn_MenuClick(object sender, RoutedEventArgs e)
+        {
+            // TODO
         }
     }
 }

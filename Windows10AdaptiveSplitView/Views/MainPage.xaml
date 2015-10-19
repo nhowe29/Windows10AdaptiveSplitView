@@ -64,13 +64,13 @@
         <SplitView IsPaneOpen="False"
                    DisplayMode="CompactOverlay"
                    Name="MySplitView"
-                   Background="Black"
+                   Background="#0A0A0A"
                    OpenPaneLength="175"
                    CompactPaneLength="48"
-                   PaneBackground="DarkSeaGreen">
+                   PaneBackground="#222222">
             <SplitView.Pane>
                 <StackPanel>
-                    <RadioButton Style="{StaticResource SplitViewNavButtonStyle}" />
+                    <RadioButton Style="{StaticResource SplitViewMenuButtonStyle}" Tag="" Click="SplitViewBtn_MenuClick"/>
                     <RadioButton Style="{StaticResource SplitViewNavButtonStyle}" Tag="" Content="Hello world" Click="SplitViewBtn_Click"/>
 
                     <RadioButton Style="{StaticResource SplitViewNavButtonStyle}" Tag="" Content="Test Two" Click="SplitViewBtn_Click"/>
