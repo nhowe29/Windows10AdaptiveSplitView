@@ -20,6 +20,10 @@ The project contains two main components, the SplitView and its inner content. W
 	- Instead of adding the content directly to the SplitView, we decouple the content, allowing us to easily specify different frames 
       for different views within the application.
 
+# Requirements
+
+- Visual Studio with Windows 10 Development Tools
+	  
 # TODO
 
 - Add a hamburger menu to allow users to manually enable/disable the action bar.

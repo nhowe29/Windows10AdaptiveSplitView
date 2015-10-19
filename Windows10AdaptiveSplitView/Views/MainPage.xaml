@@ -71,11 +71,10 @@
             <SplitView.Pane>
                 <StackPanel>
                     <RadioButton Style="{StaticResource SplitViewMenuButtonStyle}" Tag="" Click="SplitViewBtn_MenuClick"/>
-                    <RadioButton Style="{StaticResource SplitViewNavButtonStyle}" Tag="" Content="Hello world" Click="SplitViewBtn_Click"/>
-
-                    <RadioButton Style="{StaticResource SplitViewNavButtonStyle}" Tag="" Content="Test Two" Click="SplitViewBtn_Click"/>
-
-                    <RadioButton Style="{StaticResource SplitViewNavButtonStyle}" Tag="" Content="Another option" Click="SplitViewBtn_Click"/>
+                    <RadioButton Style="{StaticResource SplitViewNavButtonStyle}" Tag="" Content="Home" Click="SplitViewBtn_Click"/>
+                    <RadioButton Style="{StaticResource SplitViewNavButtonStyle}" Tag="" Content="Explore" Click="SplitViewBtn_Click"/>
+                    <RadioButton Style="{StaticResource SplitViewNavButtonStyle}" Tag="" Content="Notifications" Click="SplitViewBtn_Click"/>
+                    <RadioButton Style="{StaticResource SplitViewNavButtonStyle}" Tag="" Content="Profile" Click="SplitViewBtn_Click"/>
                 </StackPanel>
             </SplitView.Pane>
             <SplitView.Content>
