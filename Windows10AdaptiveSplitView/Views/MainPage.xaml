@@ -69,13 +69,29 @@
                    CompactPaneLength="48"
                    PaneBackground="#222222">
             <SplitView.Pane>
-                <StackPanel>
-                    <RadioButton Style="{StaticResource SplitViewMenuButtonStyle}" Tag="" Click="SplitViewBtn_MenuClick"/>
-                    <RadioButton Style="{StaticResource SplitViewNavButtonStyle}" Tag="" Content="Home" Click="SplitViewBtn_Click"/>
-                    <RadioButton Style="{StaticResource SplitViewNavButtonStyle}" Tag="" Content="Explore" Click="SplitViewBtn_Click"/>
-                    <RadioButton Style="{StaticResource SplitViewNavButtonStyle}" Tag="" Content="Notifications" Click="SplitViewBtn_Click"/>
-                    <RadioButton Style="{StaticResource SplitViewNavButtonStyle}" Tag="" Content="Profile" Click="SplitViewBtn_Click"/>
-                </StackPanel>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="75*"/>
+                        <RowDefinition Height="25*"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Grid.Row="0">
+                        <RadioButton Style="{StaticResource SplitViewMenuButtonStyle}" Tag="" Click="SplitViewBtn_MenuClick"/>
+                        <RadioButton Style="{StaticResource SplitViewNavButtonStyle}" Tag="" Content="Home" Click="SplitViewBtn_Click"/>
+                        <RadioButton Style="{StaticResource SplitViewNavButtonStyle}" Tag="" Content="Explore" Click="SplitViewBtn_Click"/>
+                        <RadioButton Style="{StaticResource SplitViewNavButtonStyle}" Tag="" Content="Notifications" Click="SplitViewBtn_Click"/>
+                        <RadioButton Style="{StaticResource SplitViewNavButtonStyle}" Tag="" Content="Profile" Click="SplitViewBtn_Click"/>
+                    </StackPanel>
+
+                    <StackPanel VerticalAlignment="Bottom" Grid.Row="1">
+                        <RadioButton Style="{StaticResource SplitViewNavButtonStyle}" Tag="" Content="Add Friend" Click="SplitViewBtn_Click"/>
+                        <RadioButton Style="{StaticResource SplitViewNavButtonStyle}" Tag="" Content="Upload" Click="SplitViewBtn_Click"/>
+                        
+                        <!--Still using MDL2 in this tag, just couldn't spot the exact icon in the character map. That's why it looks different.-->
+                        <RadioButton Style="{StaticResource SplitViewNavButtonStyle}" Tag="&#xE74F;" Content="Mute/Unmute" Click="SplitViewBtn_Click"/>
+                    </StackPanel>
+                </Grid>
+          
             </SplitView.Pane>
             <SplitView.Content>
                 <Frame x:Name="MainFrame"/>
