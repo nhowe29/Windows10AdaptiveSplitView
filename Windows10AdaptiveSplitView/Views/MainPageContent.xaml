@@ -44,33 +44,44 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="6*"/>
             <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="75"/>
+            <ColumnDefinition Width="100"/>
         </Grid.ColumnDefinitions>
         
-        <Grid Name="VerticalContent">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="7*"/>
-                <RowDefinition x:Name="NarrowCommentsRowDefinition"  Height="3*"/>
-            </Grid.RowDefinitions>
+       
+            <Grid Name="VerticalContent">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="7*"/>
+                    <RowDefinition x:Name="NarrowCommentsRowDefinition"  Height="3*"/>
+                </Grid.RowDefinitions>
 
-            <Rectangle Stretch="UniformToFill" Grid.Column="0" Fill="PowderBlue"></Rectangle>
-            <Rectangle Stretch="UniformToFill" Grid.Row="1" Fill="Teal"></Rectangle>
-        </Grid>
-        
-        <Rectangle Name="WideComments" Stretch="UniformToFill" Grid.Column="1" Width="225"  Fill="Red"></Rectangle>
-        
-        <StackPanel Grid.Column="2" HorizontalAlignment="Right" Orientation="Vertical">
-            <Rectangle x:Name="Box1" Width="75" Height="75" Fill="Orange"></Rectangle>
-            <Rectangle x:Name="Box2" Width="75" Height="75" Fill="Blue"></Rectangle>
-            <Rectangle x:Name="Box3" Width="75" Height="75" Fill="Red"></Rectangle>
-            <Rectangle x:Name="Box4" Width="75" Height="75" Fill="Orange"></Rectangle>
-            <Rectangle x:Name="Box5" Width="75" Height="75" Fill="Blue"></Rectangle>
-            <Rectangle x:Name="Box6" Width="75" Height="75" Fill="Red"></Rectangle>
-            <Rectangle x:Name="Box7" Width="75" Height="75" Fill="Orange"></Rectangle>
-            <Rectangle x:Name="Box8" Width="75" Height="75" Fill="Red"></Rectangle>
-            <Rectangle x:Name="Box9" Width="75" Height="75" Fill="Orange"></Rectangle>
-            <Rectangle x:Name="Box10" Width="75" Height="75" Fill="Red"></Rectangle>
-            <Rectangle x:Name="Box11" Width="75" Height="75" Fill="Orange"></Rectangle>
-        </StackPanel>
+                <Rectangle Stretch="UniformToFill" Grid.Row="0" Fill="PowderBlue"></Rectangle>
+                
+                <ScrollViewer VerticalScrollBarVisibility="Hidden" Grid.Row="1">
+                    <Rectangle Stretch="UniformToFill" Fill="Teal"></Rectangle>
+                </ScrollViewer>
+            </Grid>
+
+            <ScrollViewer Grid.Column="1" VerticalScrollBarVisibility="Hidden">
+                <Rectangle Name="WideComments" Stretch="UniformToFill"  Width="250" Fill="LightGoldenrodYellow"/>
+            </ScrollViewer>
+
+            <ScrollViewer Grid.Column="2" VerticalScrollBarVisibility="Hidden">
+                <StackPanel  HorizontalAlignment="Right" Orientation="Vertical">
+                <Rectangle x:Name="Box1" Width="100" Height="100" Fill="MediumVioletRed"></Rectangle>
+                <Rectangle x:Name="Box2" Width="100" Height="100" Fill="DarkRed"></Rectangle>
+                <Rectangle x:Name="Box3" Width="100" Height="100" Fill="IndianRed"></Rectangle>
+                <Rectangle x:Name="Box4" Width="100" Height="100" Fill="PaleVioletRed"></Rectangle>
+                <Rectangle x:Name="Box5" Width="100" Height="100" Fill="MediumVioletRed"></Rectangle>
+                <Rectangle x:Name="Box6" Width="100" Height="100" Fill="DarkRed"></Rectangle>
+                <Rectangle x:Name="Box7" Width="100" Height="100" Fill="IndianRed"></Rectangle>
+                <Rectangle x:Name="Box8" Width="100" Height="100" Fill="PaleVioletRed"></Rectangle>
+                <Rectangle x:Name="Box9" Width="100" Height="100" Fill="MediumVioletRed"></Rectangle>
+                <Rectangle x:Name="Box10" Width="100" Height="100" Fill="DarkRed"></Rectangle>
+                <Rectangle x:Name="Box11" Width="100" Height="100" Fill="IndianRed"></Rectangle>
+                <Rectangle x:Name="Box12" Width="100" Height="100" Fill="PaleVioletRed"></Rectangle>
+                <Rectangle x:Name="Box13" Width="100" Height="100" Fill="MediumVioletRed"></Rectangle>
+                <Rectangle x:Name="Box14" Width="100" Height="100" Fill="DarkRed"></Rectangle>
+            </StackPanel>
+            </ScrollViewer>
     </Grid>
 </Page>

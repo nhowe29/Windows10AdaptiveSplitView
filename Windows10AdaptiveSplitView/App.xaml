@@ -7,29 +7,32 @@
 
     <Application.Resources>
         <ResourceDictionary>
+            
+            <!-- Color and font size styles-->
             <SolidColorBrush x:Key="UnfocusedGlyphBrush" Color="#909090" />
             <SolidColorBrush x:Key="FocusedGlyphBrush" Color="#FFFFFF" />
 
             <SolidColorBrush x:Key="SplitViewBackgroundBrush" Color="Black" />
             <SolidColorBrush x:Key="SplitViewForegroundBrush" Color="White" />
 
-            <SolidColorBrush x:Key="MenuButtonBackgroundBrush" Color="#ff4b0082" />
-            <SolidColorBrush x:Key="MenuButtonPressedBackgroundBrush" Color="#ff8b40c2" />
-            <SolidColorBrush x:Key="MenuButtonHoverBackgroundBrush" Color="#ff6b20a2" />
-            <SolidColorBrush x:Key="MenuButtonCheckedBackgroundBrush" Color="#ff4b0082" />
-            <SolidColorBrush x:Key="MenuButtonCheckedPressedBackgroundBrush" Color="#ff4b0082" />
-            <SolidColorBrush x:Key="MenuButtonCheckedHoverBackgroundBrush" Color="#ff4b0082" />
+            <SolidColorBrush x:Key="MenuButtonBackgroundBrush" Color="#222222" />
+            <SolidColorBrush x:Key="MenuButtonPressedBackgroundBrush" Color="#303030" />
+            <SolidColorBrush x:Key="MenuButtonHoverBackgroundBrush" Color="#404040" />
+            <SolidColorBrush x:Key="MenuButtonCheckedBackgroundBrush" Color="#222222" />
+            <SolidColorBrush x:Key="MenuButtonCheckedPressedBackgroundBrush" Color="#303030" />
+            <SolidColorBrush x:Key="MenuButtonCheckedHoverBackgroundBrush" Color="#404040" />
 
-            <SolidColorBrush x:Key="NavButtonPressedBackgroundBrush" Color="#059F79" />
-            <SolidColorBrush x:Key="NavButtonHoverBackgroundBrush" Color="#ff404040" />
-            <SolidColorBrush x:Key="NavButtonCheckedBackgroundBrush" Color="#04C090" />
-            <SolidColorBrush x:Key="NavButtonCheckedPressedBackgroundBrush" Color="#04C090" />
-            <SolidColorBrush x:Key="NavButtonCheckedHoverBackgroundBrush" Color="#07EBB2" />
+            <SolidColorBrush x:Key="NavButtonPressedBackgroundBrush" Color="#303030" />
+            <SolidColorBrush x:Key="NavButtonHoverBackgroundBrush" Color="#404040" />
+            <SolidColorBrush x:Key="NavButtonCheckedBackgroundBrush" Color="#222222" />
+            <SolidColorBrush x:Key="NavButtonCheckedPressedBackgroundBrush" Color="#303030" />
+            <SolidColorBrush x:Key="NavButtonCheckedHoverBackgroundBrush" Color="#404040" />
 
             <x:Double x:Key="SplitViewNormalNavFontSize">16</x:Double>
             <x:Double x:Key="SplitViewLargeNavFontSize">20</x:Double>
             <x:Double x:Key="SplitViewBackButtonHeight">32</x:Double>
 
+            <!-- Text styling-->
             <Style TargetType="TextBlock" x:Key="SplitViewTextBlockStyle">
                 <Setter Property="VerticalAlignment" Value="Center" />
                 <Setter Property="HorizontalAlignment" Value="Center" />
@@ -37,6 +40,7 @@
                 <Setter Property="FontSize" Value="{ThemeResource SplitViewNormalNavFontSize}" />
             </Style>
 
+            <!-- Style for the SplitView Navigation Buttons (not the hamburger menu) -->
             <Style TargetType="RadioButton" x:Key="SplitViewNavButtonStyle">
                 <Setter Property="Background" Value="Transparent" />
                 <Setter Property="Padding" Value="1,4,0,0" />
@@ -193,6 +197,7 @@
                 </Setter>
             </Style>
 
+            <!-- Style for the menu button (hamburger button)-->
             <Style TargetType="RadioButton" x:Key="SplitViewMenuButtonStyle">
                 <Setter Property="Background" Value="{ThemeResource MenuButtonBackgroundBrush}" />
                 <Setter Property="Foreground" Value="{ThemeResource SplitViewForegroundBrush}" />
