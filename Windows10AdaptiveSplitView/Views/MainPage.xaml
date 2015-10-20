@@ -77,7 +77,7 @@
 
                     <StackPanel Grid.Row="0">
                         <RadioButton Style="{StaticResource SplitViewMenuButtonStyle}" Tag="" Click="SplitViewBtn_MenuClick"/>
-                        <RadioButton Style="{StaticResource SplitViewNavButtonStyle}" Tag="" Content="Home" Click="SplitViewBtn_Click"/>
+                        <RadioButton Name="HomeNavButton"  Style="{StaticResource SplitViewNavButtonStyle}" Tag="" Content="Home" Click="SplitViewBtn_Click"/>
                         <RadioButton Style="{StaticResource SplitViewNavButtonStyle}" Tag="" Content="Explore" Click="SplitViewBtn_Click"/>
                         <RadioButton Style="{StaticResource SplitViewNavButtonStyle}" Tag="" Content="Notifications" Click="SplitViewBtn_Click"/>
                         <RadioButton Style="{StaticResource SplitViewNavButtonStyle}" Tag="" Content="Profile" Click="SplitViewBtn_Click"/>

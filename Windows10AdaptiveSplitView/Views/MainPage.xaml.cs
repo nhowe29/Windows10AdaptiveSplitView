@@ -25,14 +25,18 @@ namespace AdaptiveExampleConcept
         public MainPage()
         {
             InitializeComponent();
+
+            // Load home page by default.
+            HomeNavButton.IsChecked = true;
+            this.MainFrame.Navigate(typeof (MainPageContent), HomeNavButton.Content);
         }
 
         private void SplitViewBtn_Click(object sender, RoutedEventArgs args)
         {
-            var radioButton = sender as FrameworkElement;
+            var radioButton = sender as RadioButton;
             if (radioButton != null)
             {
-                this.MainFrame.Navigate(typeof(MainPageContent), radioButton.Tag);
+                this.MainFrame.Navigate(typeof(MainPageContent), radioButton.Content);
             }
         }
 
